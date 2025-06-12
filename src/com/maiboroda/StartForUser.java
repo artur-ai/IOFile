@@ -1,4 +1,7 @@
 package com.maiboroda;
+
+import java.nio.file.NoSuchFileException;
+
 public class StartForUser {
     public static void main(String[] args) {
         if (args.length != 2) {

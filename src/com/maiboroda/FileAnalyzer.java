@@ -29,7 +29,7 @@ public class FileAnalyzer {
         }
     }
 
-    private String readPath(String path) {
+    String readPath(String path) {
         try {
             return Files.readString(Paths.get(path));
         } catch (IOException exception) {
@@ -39,13 +39,13 @@ public class FileAnalyzer {
         }
     }
 
-    private List<String> splitToSentences(String text) {
+    protected List<String> splitToSentences(String text) {
         String[] sentences = text.split("[!?.]");
         List<String> list = new ArrayList<>(List.of(sentences));
         return list;
     }
 
-    private List<String> searchWordInSentences(List<String> sentences, String word) {
+    protected List<String> searchWordInSentences(List<String> sentences, String word) {
         List<String> result = new ArrayList<>();
         String lowerCaseWord = word.toLowerCase();
         for (String sentence : sentences) {
@@ -60,7 +60,7 @@ public class FileAnalyzer {
         return result;
     }
 
-    private int countWord(List<String> searchedSentences, String word) {
+    protected int countWord(List<String> searchedSentences, String word) {
         int count = 0;
         String lowerCaseWord = word.toLowerCase();
         for (String searchedSentence : searchedSentences) {

@@ -23,6 +23,4 @@ public class Result {
         this.sentences = sentences;
         this.count = count;
     }
-
-
 }
