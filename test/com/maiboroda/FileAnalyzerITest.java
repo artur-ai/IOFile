@@ -11,6 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class FileAnalyzerITest {
     FileAnalyzer fileAnalyzer = new FileAnalyzer();
+    private final String path = "test/resources/text.txt";
 
     @Test
     void testReadFile() {
@@ -38,7 +39,6 @@ public class FileAnalyzerITest {
         assertEquals(10, count);
     }
 
-    private final String path = "C:\\Users\\Admin\\IdeaProjects\\IOFile\\test\\resources\\text.txt";
     private String text = fileAnalyzer.readPath(path);
     private List<String> sentences = fileAnalyzer.splitToSentences(text);
 }

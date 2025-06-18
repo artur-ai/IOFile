@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class FileAnalyzerTest {
 
     FileAnalyzer fileAnalyzer = new FileAnalyzer();
-    private final String path = "C:\\Users\\Admin\\IdeaProjects\\IOFile\\test\\resources\\text.txt";
+    private final String path = "test/resources/text.txt";
 
     @Test
     void testValidateWordWithEmptyWord() {
