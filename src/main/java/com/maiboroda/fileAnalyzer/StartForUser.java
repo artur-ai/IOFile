@@ -1,4 +1,4 @@
-package com.maiboroda;
+package com.maiboroda.fileAnalyzer;
 
 public class StartForUser {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.maiboroda;
+package com.maiboroda.fileAnalyzer;
 import java.util.List;
 
 public class Result {
