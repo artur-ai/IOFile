@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class FileAnalyzerITest {
     FileAnalyzer fileAnalyzer;
-    private final String PATH = "src" + File.separator + "resources" + File.separator +  "text.txt";
+    private final String PATH = "src/test/resources/text.txt";
 
     @BeforeEach
     void setUp(){
